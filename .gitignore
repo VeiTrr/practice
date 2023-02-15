@@ -30,8 +30,7 @@
 *.exe
 *.out
 *.app
-/.vs/practice
-/practice 1/x64/Debug
+/.vs
 /x64/Debug
 *.sln
 *.user
