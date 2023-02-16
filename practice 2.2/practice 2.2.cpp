@@ -1,11 +1,11 @@
 #include <iostream>
-#include "Circle.h"
+#include "circle.h"
 using namespace std;
 
 int main()
 {
     setlocale(0, "");
-    Circle mas[3];
+    circle mas[3];
     float r, x, y;
     float a, b, c;
     for (int i = 0; i < 3; i++) {
