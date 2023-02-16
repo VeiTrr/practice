@@ -47,14 +47,13 @@ public:
     bool check_circle(float r,
         float x_cntr, float y_cntr) {
         float l = sqrt((x_cntr - x_center) * (x_cntr - x_center) + (y_cntr - y_center) * (y_cntr - y_center));
-        if ((radius + r >= l && radius + l >= r && r + l >= radius)||(l == 0 && radius == r)) {
+        if ((radius + r >= l && radius + l >= r && r + l >= radius) || (l == 0 && radius == r)) {
             return true;
         }
         else
         {
             return false;
         }
-
     };
 };
 
