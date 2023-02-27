@@ -1,7 +1,11 @@
 #include "circle.h"
 
 
-
+circle::circle() {
+	radius = 0;
+	x_center = 0;
+	y_center = 0;
+}
 void circle::set_circle(float r, float x, float y) {
     radius = r;
     x_center = x;
