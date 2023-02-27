@@ -48,11 +48,6 @@ double eq2::find_Y(double x1) {
     return a * x1 * x1 + b * x1 + c;
 }
 
-eq2 operator + (eq2 a, eq2 b) {
-   {
-	double a1 = a.a + b.a;
-	double b1 = a.b + b.b;
-	double c1 = a.c + b.c;
-	eq2 c(a1, b1, c1);
-	return c;
+eq2 operator+ (eq2 & a, eq2 & b) {
+	return eq2(a.a + b.a, a.b + b.b, a.c + b.c);
 }

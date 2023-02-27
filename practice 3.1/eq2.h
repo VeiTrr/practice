@@ -1,4 +1,7 @@
+
 #pragma once
+
+
 class eq2
 {
 private:
@@ -6,14 +9,9 @@ private:
     double D;
 
 public:
-    eq2(double a1, double b1, double c1) {
-    }
-    void set(double a1, double b1, double c1) {
-    }
-    double find_X() {
-    }
-    double find_Y(double x1) {
-    }
-    friend eq2 operator + (eq2 a, eq2 b) {
-	}
+    eq2(double a1, double b1, double c1);
+    void set(double a1, double b1, double c1);
+    double find_X();
+    double find_Y(double x1);
+    friend eq2 operator+ (eq2& a, eq2& b);
 };
