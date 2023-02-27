@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include "Triangle.h"
 using namespace std;
 

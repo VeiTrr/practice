@@ -40,11 +40,11 @@ public:
 			sqrt(pow((x4 - x3), 2) + pow((y4 - y3), 2)) +
 			sqrt(pow((x1 - x4), 2) + pow((y1 - y4), 2));
 		}
-	void show() {}
-	bool is_prug() {}
-	bool is_square() {}
-	bool is_romb() {}
-	bool is_in_circle() {}
-	bool is_out_circle() {}
+	void show();
+	bool is_prug();
+	bool is_square();
+	bool is_romb();
+	bool is_in_circle();
+	bool is_out_circle();
 };
 

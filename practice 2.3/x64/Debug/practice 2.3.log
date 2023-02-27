@@ -1,0 +1,30 @@
+﻿  figure.cpp
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.h(40,48): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(5,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(6,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(7,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(8,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(23,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(24,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(25,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(26,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(36,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(37,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(38,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(39,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(50,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(51,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(52,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(53,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(63,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(64,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(65,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(66,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(76,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(77,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(78,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.cpp(79,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  practice 2.3.cpp
+C:\Users\VeiTr\source\repos\practice\practice 2.3\figure.h(40,48): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  practice 2.3.vcxproj -> C:\Users\VeiTr\source\repos\practice\x64\Debug\practice 2.3.exe
