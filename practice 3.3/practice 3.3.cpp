@@ -1,30 +1,9 @@
-
+ï»¿
 #include "rational.h"
 #include <iostream>
 #include <cmath>
 using namespace std;
 
-int od(int a1, int b1) {
-	int c;
-	while (a1 != 0 && b1 != 0) {
-		if (a1 > b1) {
-			c = a1 % b1;
-			a1 = b1;
-			b1 = c;
-		}
-		else {
-			c = b1 % a1;
-			b1 = a1;
-			a1 = c;
-		}
-	}
-	if (a1 == 0) {
-		return b1;
-	}
-	else {
-		return a1;
-	}
-}
 
 int main()
 {
@@ -32,85 +11,55 @@ int main()
 	int n;
 	int	a, b;
 
-	cout << "ââåäèòå êîëè÷åñòâî ýëåìåíòîâ: " << endl;
+	cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " << endl;
 	cin >> n;
 	rational* r = new rational[n];
 
 	for (int i = 0; i < n; i++)
 	{
-		cout << "ââåäèòå ÷èñëèòåëü è çíàìåíàòåëü: " << endl;
+		cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¸Ñ‚ÐµÐ»ÑŒ Ð¸ Ð·Ð½Ð°Ð¼ÐµÐ½Ð°Ñ‚ÐµÐ»ÑŒ: " << endl;
 		cin >> a >> b;
-		if (b == 0)
-		{
-			cout << "çíàìåíàòåëü íå ìîæåò áûòü ðàâåí íóëþ" << endl;
+		try {
+			r[i].set(a, b);
 		}
-		else {
-			if (b == 1) {
-				r[i].set(a, b);
-			}
-			else {
-				if (a > b && a % b != 0) {
-					a = a - b;
-					if (od(a, b) == 1) {
-						r[i].set(a, b);
-					}
-					else {
-						while (od(a, b) != 1) {
-							int c = od(a, b);
-							a = a / c;
-							b = b / c;
-						}
-						r[i].set(a, b);
-					}
-				}
-				else {
-					if (od(a, b) == 1) {
-						r[i].set(a, b);
-					}
-					else {
-						while (od(a, b) != 1) {
-							int c = od(a, b);
-							a = a / c;
-							b = b / c;
-						}
-						r[i].set(a, b);
-					}
-				}
-			}
+		catch (invalid_argument& e) {
+			cout << e.what() << endl;
+			i--;
 		}
 	}
-	rational r1(0, 1);
+	rational tr(0, 1);
 	for (int i = 0; i < n; i++)
 	{
+		cout << "Ð´Ñ€Ð¾Ð±ÑŒ " << i + 1 << ": ";
 		r[i].show();
-		r1 = r1 + r[i];
+		tr = tr + r[i];
 	}
-	cout << "ñóììà âñåõ äðîáåé: ";
-	r1.show();
+	cout << "ÑÑƒÐ¼Ð¼Ð° Ð²ÑÐµÑ… Ð´Ñ€Ð¾Ð±ÐµÐ¹: ";
+	tr.show();
 	cout << endl;
-	cout << "äðîáü 1 - äðîáü 2: ";
-	r1 = r[0].operator-(r[1]);
-	r1.show();
+	cout << "Ð´Ñ€Ð¾Ð±ÑŒ 1 - Ð´Ñ€Ð¾Ð±ÑŒ 2: ";
+	tr = r[0].operator-(r[1]);
+	tr.show();
 	cout << endl;
-	cout << "èíêðåìåíò: " << endl << "äðîáü äî: ";
+	cout << "Ð¸Ð½ÐºÑ€ÐµÐ¼ÐµÐ½Ñ‚: " << endl << "Ð´Ñ€Ð¾Ð±ÑŒ Ð´Ð¾: ";
 	r[0].show();
 	r[0].operator++();
-	cout << "äðîáü ïîñëå: ";
+	cout << "Ð´Ñ€Ð¾Ð±ÑŒ Ð¿Ð¾ÑÐ»Ðµ: ";
 	r[0].show();
 	cout << endl;
-	cout << "ñðàâíåíèå: " << endl;
+	cout << "ÑÑ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ: " << endl;
 	if (r[0].operator==(r[1])) {
-		cout << "äðîáè 1 è 2 ðàâíû" << endl;
+		cout << "Ð´Ñ€Ð¾Ð±Ð¸ 1 Ð¸ 2 Ñ€Ð°Ð²Ð½Ñ‹" << endl;
 	}
 	else {
-		cout << "äðîáè 1 è 2 íå ðàâíû" << endl;
+		cout << "Ð´Ñ€Ð¾Ð±Ð¸ 1 Ð¸ 2 Ð½Ðµ Ñ€Ð°Ð²Ð½Ñ‹" << endl;
 	}
 
 	if (r[0].operator>(r[1])) {
-		cout << "äðîáü 1 áîëüøå äðîáè 2" << endl;
+		cout << "Ð´Ñ€Ð¾Ð±ÑŒ 1 Ð±Ð¾Ð»ÑŒÑˆÐµ Ð´Ñ€Ð¾Ð±Ð¸ 2" << endl;
 	}
 	else {
-		cout << "äðîáü 1 íå áîëüøå äðîáè 2" << endl;
+		cout << "Ð´Ñ€Ð¾Ð±ÑŒ 1 Ð½Ðµ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð´Ñ€Ð¾Ð±Ð¸ 2" << endl;
 	}
 
 	delete[] r;

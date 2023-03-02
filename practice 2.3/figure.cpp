@@ -1,4 +1,4 @@
-#include "figure.h"
+﻿#include "figure.h"
 #include <cmath>
 
 void figure::show() {

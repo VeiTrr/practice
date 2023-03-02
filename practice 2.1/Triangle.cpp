@@ -1,4 +1,4 @@
-#include "Triangle.h"
+﻿#include "Triangle.h"
 
 bool Triangle::exst_tr() {
     return ((a + b > c) && (b + c > a) && (a + c > b));
