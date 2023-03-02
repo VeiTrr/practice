@@ -1,4 +1,4 @@
-#include "rational.h"
+п»ї#include "rational.h"
 #include <iostream>
 using namespace std;
 
@@ -10,7 +10,7 @@ rational::rational() {
 rational::rational(int a1, int b1)
 {
 	if (b1 == 0) {
-		throw invalid_argument("знаменатель не может быть равен нулю");
+		throw invalid_argument("Р·РЅР°РјРµРЅР°С‚РµР»СЊ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЂР°РІРµРЅ РЅСѓР»СЋ");
 	}
 	a = a1;
 	b = b1;
@@ -43,7 +43,7 @@ rational::rational(int a1, int b1)
 void rational::set(int a1, int b1)
 {
 	if (b1 == 0) {
-		throw invalid_argument("знаменатель не может быть равен нулю");
+		throw invalid_argument("Р·РЅР°РјРµРЅР°С‚РµР»СЊ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЂР°РІРµРЅ РЅСѓР»СЋ");
 	}
 	a = a1;
 	b = b1;

@@ -1,4 +1,4 @@
-#include "figure.h"
+п»ї#include "figure.h"
 #include <cmath>
 
 void figure::show() {
@@ -6,17 +6,17 @@ void figure::show() {
     float b = sqrt(pow((x3 - x2), 2) + pow((y3 - y2), 2));
     float c = sqrt(pow((x4 - x3), 2) + pow((y4 - y3), 2));
     float d = sqrt(pow((x1 - x4), 2) + pow((y1 - y4), 2));
-    cout << "Координаты точек: " << endl;
+    cout << "РљРѕРѕСЂРґРёРЅР°С‚С‹ С‚РѕС‡РµРє: " << endl;
     cout << "1 : (" << x1 << ";" << y1 << ")" << endl;
     cout << "2 : (" << x2 << ";" << y2 << ")" << endl;
     cout << "3 : (" << x3 << ";" << y3 << ")" << endl;
     cout << "4 : (" << x4 << ";" << y4 << ")" << endl;
-    cout << "1 сторона: " << a << endl;
-    cout << "2 сторона: " << b << endl;
-    cout << "3 сторона: " << c << endl;
-    cout << "4 сторона: " << d << endl;
-    cout << "Периметр: " << P << endl;
-    cout << "Площадь: " << S << endl;
+    cout << "1 СЃС‚РѕСЂРѕРЅР°: " << a << endl;
+    cout << "2 СЃС‚РѕСЂРѕРЅР°: " << b << endl;
+    cout << "3 СЃС‚РѕСЂРѕРЅР°: " << c << endl;
+    cout << "4 СЃС‚РѕСЂРѕРЅР°: " << d << endl;
+    cout << "РџРµСЂРёРјРµС‚СЂ: " << P << endl;
+    cout << "РџР»РѕС‰Р°РґСЊ: " << S << endl;
 }
 
 bool figure::is_prug() {

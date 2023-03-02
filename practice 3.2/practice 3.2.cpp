@@ -1,4 +1,4 @@
-
+ï»¿
 #include "rational.h"
 #include <iostream>
 #include <cmath>
@@ -11,13 +11,13 @@ int main()
 	int n;
 	int	a, b;
 
-	cout << "ââåäèòå êîëè÷åñòâî ýëåìåíòîâ: " << endl;
+	cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " << endl;
 	cin >> n;
 	rational* r = new rational[n];
 
 	for (int i = 0; i < n; i++)
 	{
-		cout << "ââåäèòå ÷èñëèòåëü è çíàìåíàòåëü: " << endl;
+		cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¸Ñ‚ÐµÐ»ÑŒ Ð¸ Ð·Ð½Ð°Ð¼ÐµÐ½Ð°Ñ‚ÐµÐ»ÑŒ: " << endl;
 		cin >> a >> b;
 		try {
 			r[i].set(a, b);
