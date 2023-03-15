@@ -1,4 +1,4 @@
-﻿
+
 #include "rational.h"
 #include <iostream>
 #include <cmath>
