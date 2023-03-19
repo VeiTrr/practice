@@ -30,4 +30,6 @@ add_executable(practice_6_2
 add_executable(practice_6_3
         "practice 6/practice 6.3/practice 6.3.cpp")
 
+set(CMAKE_EXE_LINKER_FLAGS "-static")
+
 

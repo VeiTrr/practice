@@ -1,10 +1,12 @@
 ﻿#include <iostream>
 #include "figure.h"
+#include <windows.h>
 using namespace std;
 
 int main()
 {
-    setlocale(0, "");
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
     figure mas[3];
     float x1, x2, x3, x4;
     float y1, y2, y3, y4;

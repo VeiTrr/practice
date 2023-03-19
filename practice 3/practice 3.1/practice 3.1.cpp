@@ -1,19 +1,21 @@
 #include <iostream>
 #include <cmath>
 #include "eq2.h"
+#include "windows.h"
 using namespace std;
 
 int main()
 {
-    setlocale(0, "");
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
     double a, b, c;
     double a2, b2, c2;
-    cout << "Ââåäèòå êîýôôèöèåíòû a, b, c: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾ÑÑ„Ñ„Ð¸Ñ†Ð¸ÐµÐ½Ñ‚Ñ‹ a, b, c: ";
     cin >> a >> b >> c;
     eq2 exmpl(a, b, c);
     exmpl.find_X();
     cout << exmpl.find_Y(6);
-    cout << "Ââåäèòå êîýôôèöèåíòû a, b, c äëÿ âòîðîãî óðàâíåíèÿ: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾ÑÑ„Ñ„Ð¸Ñ†Ð¸ÐµÐ½Ñ‚Ñ‹ a, b, c Ð´Ð»Ñ Ð²Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ ÑƒÑ€Ð°Ð²Ð½ÐµÐ½Ð¸Ñ: ";
     cin >> a2 >> b2 >> c2;
     eq2 exmpl2(a2, b2, c2);
     eq2 exmpl3 = exmpl + exmpl2;

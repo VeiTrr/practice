@@ -1,10 +1,12 @@
 ﻿#include <iostream>
 #include "circle.h"
+#include <windows.h>
 using namespace std;
 
 int main()
 {
-    setlocale(0, "");
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
     circle mas[3];
     float r, x, y;
     float a, b, c;

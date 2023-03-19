@@ -1,10 +1,12 @@
 ﻿#include <iostream>
 #include "Triangle.h"
+#include <windows.h>
 using namespace std;
 
 int main()
 {
-    setlocale(0, "");
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
     Triangle mas[3];
     double a, b, c;
     for (int i = 0; i < 3; i++) {
