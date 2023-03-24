@@ -22,10 +22,10 @@ add_executable(practice_3_3
         "practice 3/practice 3.3/practice 3.3.cpp" "practice 3/practice 3.3/rational.cpp" "practice 3/practice 3.3/rational.h")
 
 add_executable(practice_6_1
-        "practice 6/practice 6.1/practice 6.1.cpp" "practice 6/practice 6.1/cone.cpp" "practice 6/practice 6.1/cone.h")
+        "practice 6/practice 6.1/practice 6.1.cpp" "practice 6/practice 6.1/Cone.cpp" "practice 6/practice 6.1/Cone.h")
 
 add_executable(practice_6_2
-        "practice 6/practice 6.2/practice 6.2.cpp")
+        "practice 6/practice 6.2/practice 6.2.cpp" "practice 6/practice 6.2/cone.cpp" "practice 6/practice 6.2/cone.h")
 
 add_executable(practice_6_3
         "practice 6/practice 6.3/practice 6.3.cpp")
