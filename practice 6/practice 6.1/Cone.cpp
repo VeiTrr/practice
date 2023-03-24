@@ -1,45 +1,43 @@
+#include "Cone.h"
 #include <iostream>
 #include <cmath>
-#include "cone.h"
 
 using namespace std;
 
-const double PI = 3.14159265358979323846;
-
-// конструктор по умолчанию
+// Конструктор по умолчанию
 Cone::Cone() : x(0), y(0), z(0), r(0), h(0) {}
 
-// конструктор произвольного конуса
-Cone::Cone(double x, double y, double z, double r, double h)
-        : x(x), y(y), z(z), r(r), h(h) {}
-
-// конструктор конуса с центром в начале координат
+// Конструктор конуса с центром в начале координат
 Cone::Cone(double r, double h) : x(0), y(0), z(0), r(r), h(h) {}
 
-// метод ввода данных
+// Конструктор произвольного конуса
+Cone::Cone(double x, double y, double z, double r, double h) : x(x), y(y), z(z), r(r), h(h) {}
+
+// Метод ввода данных
 void Cone::input() {
-    cout << "Enter the coordinates of the base center (x, y, z): ";
+    cout << "Введите координаты центра основания (x y z): ";
     cin >> x >> y >> z;
-    cout << "Enter the radius of the base: ";
+    cout << "Введите радиус основания: ";
     cin >> r;
-    cout << "Enter the height of the cone: ";
+    cout << "Введите высоту: ";
     cin >> h;
 }
 
-// метод вывода данных
+// Метод вывода данных
 void Cone::output() const {
-    cout << "Base center: (" << x << ", " << y << ", " << z << ")" << endl;
-    cout << "Radius of the base: " << r << endl;
-    cout << "Height of the cone: " << h << endl;
+    cout << "Координаты центра основания: (" << x << ", " << y << ", " << z << ")" << endl;
+    cout << "Радиус основания: " << r << endl;
+    cout << "Высота: " << h << endl;
 }
 
-// метод вычисления площади поверхности
+// Метод вычисления площади поверхности
 double Cone::surfaceArea() const {
-    double l = sqrt(r*r + h*h); // образующая
-    return PI*r*l + PI*r*r;
+    double L = sqrt(pow(r, 2) + pow(h, 2)); // Длина образующей
+    return M_PI * r * L + M_PI * pow(r, 2); // Площадь поверхности
 }
 
-// метод вычисления объёма
+// Метод вычисления объёма
 double Cone::volume() const {
-    return PI*r*r*h/3;
+    return M_PI * pow(r, 2) * h / 3; // Объём
 }
+

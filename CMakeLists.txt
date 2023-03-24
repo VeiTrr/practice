@@ -25,7 +25,7 @@ add_executable(practice_6_1
         "practice 6/practice 6.1/practice 6.1.cpp" "practice 6/practice 6.1/Cone.cpp" "practice 6/practice 6.1/Cone.h")
 
 add_executable(practice_6_2
-        "practice 6/practice 6.2/practice 6.2.cpp" "practice 6/practice 6.2/cone.cpp" "practice 6/practice 6.2/cone.h")
+        "practice 6/practice 6.2/practice 6.2.cpp" "practice 6/practice 6.2/Cone.cpp" "practice 6/practice 6.2/Cone.h")
 
 add_executable(practice_6_3
         "practice 6/practice 6.3/practice 6.3.cpp")
