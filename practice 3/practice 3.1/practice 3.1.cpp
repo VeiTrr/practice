@@ -1,11 +1,13 @@
-﻿#include <iostream>
+#include <iostream>
 #include <cmath>
 #include "eq2.h"
+#include "windows.h"
 using namespace std;
 
 int main()
 {
-    setlocale(0, "");
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
     double a, b, c;
     double a2, b2, c2;
     cout << "Введите коэффициенты a, b, c: ";

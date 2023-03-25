@@ -21,4 +21,15 @@ add_executable(practice_3_2
 add_executable(practice_3_3
         "practice 3/practice 3.3/practice 3.3.cpp" "practice 3/practice 3.3/rational.cpp" "practice 3/practice 3.3/rational.h")
 
+add_executable(practice_6_1
+        "practice 6/practice 6.1/practice 6.1.cpp" "practice 6/practice 6.1/Cone.cpp" "practice 6/practice 6.1/Cone.h")
+
+add_executable(practice_6_2
+        "practice 6/practice 6.2/practice 6.2.cpp" "practice 6/practice 6.2/Cone.cpp" "practice 6/practice 6.2/Cone.h")
+
+add_executable(practice_6_3
+        "practice 6/practice 6.3/practice 6.3.cpp" "practice 6/practice 6.3/Ocean.cpp" "practice 6/practice 6.3/Ocean.h" "practice 6/practice 6.3/Sea.cpp" "practice 6/practice 6.3/Sea.h" "practice 6/practice 6.3/Bay.cpp" "practice 6/practice 6.3/Bay.h")
+
+set(CMAKE_EXE_LINKER_FLAGS "-static")
+
 

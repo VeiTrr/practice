@@ -1,13 +1,15 @@
-﻿
+
 #include "rational.h"
 #include <iostream>
 #include <cmath>
+#include <windows.h>
 using namespace std;
 
 
 int main()
 {
-	setlocale(0, "");
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
 	int n;
 	int	a, b;
 
